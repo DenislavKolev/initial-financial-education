@@ -1,0 +1,245 @@
+body, header, main, footer, div, span, nav, h1, h2, ul, li, p, section{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f8f8f8;
+}
+/*header styles*/
+header div{
+    display: inline-block;
+    height: 100px;
+}
+header > :nth-child(1){
+    width: 10%;
+}
+header > :nth-child(2){
+    width: 90%;
+    float: right;
+}
+header div h1{
+    text-align: center;
+    font-size: 3.2em;
+    font-family: "Segoe Print";
+    color: black;
+}
+header div img{
+    height: 95%;
+}
+header nav{
+    background: linear-gradient(to bottom, #b4ddb4 0%,#83c783 0%,#008a00 0%,#52b152 100%,#008a00 100%,#005700 100%,#002400 100%,#008a00 101%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+header nav ul {
+    display: flex;
+}
+header nav ul li {
+    flex: 1;
+}
+.longer{
+    flex: 1.2;
+}
+header nav ul li a{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+    padding: 15px;
+    font-size: 1.4em;
+    transition: background-color .4s;
+}
+header nav ul li a:hover{
+    background-color: white;
+    color: black;
+}
+/*main tag layout*/
+main{
+    background-color: white;
+    width: 80%;
+    border: 1px solid white;
+    margin: auto;
+    margin-top: 2%;
+    box-shadow: 1px 1px 3px rgba(80, 80, 80, .4);
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+main p{
+    padding-bottom: 15px;
+}
+.mainInfo{
+     width: 90%;
+     margin: auto;
+     font-size: 1.3em;
+}
+.headers{
+    font-size: 2.7em;
+    text-align: center;
+    padding: 2%;
+}
+.listedInfo{
+    padding-left: 2%;
+}
+.calculatorIcon{
+    float: right;
+}
+.calculatorDescription{
+    width: 90%;
+    margin: auto;
+    padding: 0 15px;
+    text-align: center;
+    font-size: 1.3em;
+}
+.hours{
+    float: right;
+    color: black;
+    padding: 5px 5px 0 0;
+}
+.buttons{
+    width: 24%;
+    height: 45px;
+    margin: 2% 0;
+    font-size: 1.3em;
+    color: white;
+    background: linear-gradient(to bottom, #b4ddb4 0%,#83c783 0%,#008a00 0%,#52b152 100%,#008a00 100%,#005700 100%,#002400 100%,#008a00 101%);
+}
+.buttons:hover{
+    transform: scale(.97);
+}
+.quotes{
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 2.6%;
+}
+#realization, #tryAgain, .animation{
+    text-align: center;
+}
+/*about us styles*/
+#me{
+    display: block;
+    width: 20%;
+    margin: auto;
+    padding: 15px;
+}
+#realization img{
+    width: 15%;
+    padding-bottom: 15px;
+}
+/*calculator styles*/
+.calculatorForm{
+    width: 60%;
+    margin: auto;
+    margin-top: 5%;
+    border: 1px solid gray;
+    border-radius: 10px;
+    max-width: 590px;
+    margin-bottom: 3%;
+}
+.calculatorForm h2{
+    text-align: center;
+    font-size: 2em;
+    padding: 10px 0;
+}
+.calculatorForm div{
+    margin: 15px;
+    text-align: center;
+}
+.calculatorForm label{
+    display: inline-block;
+    width: 50%;
+    text-align: right;
+    font-size: 1.3em;
+}
+#year{
+    width: 160.8px;
+}
+article{
+    display: none;
+    width: 50%;
+    max-width: 490px;
+    margin: auto;
+    font-size: 1.2em;
+    background: #fcfcfc;
+    border: 1px solid rgba(80, 80, 80, .5);
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(80, 80, 80, .4);
+    margin-bottom: 3%;
+}
+article div{
+    margin: 5px;
+    text-align: center;
+}
+article ~ div{
+    margin: 0 0 5px 10px;
+}
+
+/*test styles*/
+#testForm section{
+    margin-top: 2.5%;
+}
+#testForm section h2 {
+    padding: 0 5%;
+}
+#testForm section div input{
+    margin: 1.5% 0 0 8%;
+}
+#testForm section div label{
+    font-size: 1.3em;
+}
+#submit{
+    display: block;
+    text-align: center;
+    padding: 3% 0;
+}
+#submit img{
+    width: 12%;
+    min-width: 120px;
+}
+#submit img:hover{
+    transform: scale(.95);
+}
+.points{
+    font-size: 1.5em;
+    text-align: center;
+}
+/*footer styles*/
+footer{
+    background: linear-gradient(to bottom, #b4ddb4 0%,#83c783 0%,#008a00 0%,#52b152 100%,#008a00 100%,#005700 100%,#002400 100%,#008a00 101%);
+    margin-top: 3%;
+}
+footer p{
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 0.4% 0;
+}
+footer  p:first-of-type{
+    padding-top: 1.8%;
+}
+footer  p:last-of-type{
+    padding-bottom: 1.8%;
+}
+footer a{
+    color: white;
+}
+
+
+/*mobile design*/
+@media only screen and (max-width: 1025px) {
+    .longer {
+        flex: 1.6;
+    }
+}
+@media only screen and (max-width: 990px) {
+    header div h1{
+        transform: translateY(20%);
+        font-size: 2.6em;
+    }
+    header nav ul{
+        display: block;
+        font-size: 1.6em;
+    }
+}

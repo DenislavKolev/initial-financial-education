@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Кредитен калкулатор</title>
+    <link rel="stylesheet" href="../../css/mainStyle.css">
+    <link rel="icon" href="../../images/logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../../js/creditCalculator.js"></script>
+    <script src="../../js/hours.js"></script>
+
+</head>
+<body>
+    <header>
+        <div>
+            <img src="../../images/logo.png" alt="">
+        </div>
+        <div>
+            <span class="hours"></span>
+            <a href="../../home.html">
+                <h1>Начално финансово образвание</h1>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../contracts.html">Договори</a></li>
+                <li><a href="../credits.html">Кредити</a></li>
+                <li><a href="../deposits.html">Депозити</a></li>
+                <li class="longer"><a href="../cards.html">Банкови карти</a></li>
+                <li><a href="../salary.html">Заплати</a></li>
+                <li><a href="../advices.html">Съвети</a></li>
+                <li><a href="../test.html">Тест</a></li>
+                <li class="longer"><a href="../about%20us.html">За проекта</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="headers">Калкулатор за изчисляване на вноски по кредит</h1>
+        <p class="calculatorDescription">Този калкулатор служи за изчисляване на размера на вноските по кредит, след въвеждане на съответните стойности.</p>
+        <form class="calculatorForm" action="#">
+            <h2>Въведи:</h2>
+            <div>
+                <label for="credit">Размер на кредита: </label>
+                <input type="text" id = 'credit' required >
+            </div>
+            <div>
+                <label for="duration">Срок на кредита в месеци: </label>
+                <input type="text" id = 'duration' required>
+            </div>
+            <div>
+                <label for="interestRate">Годишна лихва*:</label>
+                <input type="text" id = 'interestRate' required>
+            </div>
+            <div>
+                <label for="initialFees">Първоначални такси: </label>
+                <input type="text" id = 'initialFees' required>
+            </div>
+            <div>
+                <label for="moreInitialFees">Други първоначални такси: </label>
+                <input type="text" id = 'moreInitialFees' required>
+            </div>
+            <div>
+                <label for="annualFees">Годишна такса за управление*: </label>
+                <input type="text" id = 'annualFees' required>
+            </div>
+            <div>
+                <label for="moreAnnualFees">Други годишни такси*: </label>
+                <input type="text" id = 'moreAnnualFees' required>
+            </div>
+            <div>
+                <input type="submit" value="Изпращане" class="buttons">
+                <input type="reset" value="Изчисти" class="buttons">
+            </div>
+        </form>
+        <article>
+            <div>1. Размер на кредита: <span id='creditSpan'></span></div>
+            <div>2. Срок на кредита: <span id='durationSpan'></span></div>
+            <hr />
+            <div>3. Месечна вноска: <span id='monthlyPayment'></span></div>
+            <div>4. Общо първоначални такси: <span id='totalInitalFees'></span></div>
+            <div>5. Общо лихва: <span id='totalInterestRate'></span></div>
+            <hr>
+            <div>6. Обща сума: <span id='totalReturn'></span></div>
+        </article>
+        <div>'*' => Стойносите трябва да са в проценти.</div>
+    </main>
+    <footer>
+            <p>Повече информация:</p>
+            <p><img src="../../images/facebook.png" alt=""> <a href="https://www.facebook.com/deni.kolev.71" target="_blank">Deni Kolev</a></p>
+            <p><img src="../../images/download.png" alt=""> denislav_kolev00@abv.bg</p>
+            <p><img src="../../images/git.png" alt=""> <a href="https://github.com/DenislavKolev" target="_blank">https://github.com/DenislavKolev</a></p>
+    </footer>
+</body>
+</html>

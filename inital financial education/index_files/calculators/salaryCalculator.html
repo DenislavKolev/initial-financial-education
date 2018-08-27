@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Калкулатор за нетна заплата</title>
+    <link rel="stylesheet" href="../../css/mainStyle.css">
+    <link rel="icon" href="../../images/logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../../js/salaryCalculator.js"></script>
+    <script src="../../js/hours.js"></script>
+
+</head>
+<body>
+    <header>
+        <div>
+                <img src="../../images/logo.png" alt="">
+        </div>
+        <div>
+            <span class="hours"></span>
+            <a href="../../home.html">
+                <h1>Начално финансово образвание</h1>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../contracts.html">Договори</a></li>
+                <li><a href="../credits.html">Кредити</a></li>
+                <li><a href="../deposits.html">Депозити</a></li>
+                <li class="longer"><a href="../cards.html">Банкови карти</a></li>
+                <li><a href="../salary.html">Заплати</a></li>
+                <li><a href="../advices.html">Съвети</a></li>
+                <li><a href="../test.html">Тест</a></li>
+                <li class="longer"><a href="../about%20us.html">За проекта</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="headers">Калкулатор за изчисляване на нетна заплата</h1>
+        <p class="calculatorDescription">Този калкулатор служи за изчисляване на нетното възнаграждение на служителите работещи на трудов договор. Изчисляване се извършва само от брутна към нетна заплата.</p>
+        <form class="calculatorForm" action="#">
+            <h2>Въведи:</h2>
+            <div>
+                <label for="salary">Основна работна заплата: </label>
+                <input class = 'inputs' type="number" id = 'salary' >
+            </div>
+            <div>
+                <label for="minSocialSecurityIncome">Минимален осигурителен доход: </label>
+                <input class = 'inputs' type="number" id = 'minSocialSecurityIncome' >
+            </div>
+            <div>
+                <label for="year">Година на раждане:</label>
+                <select  name="year" id="year">
+                    <option value="1">Преди 1960</option>
+                    <option value="2">След 1960</option>
+                </select>
+            </div>
+            <div>
+                <label for="experience">Години стаж: </label>
+                <input class = 'inputs' type="number" id = 'experience' min="1" >
+            </div>
+            <div>
+                <label for="moneyForExeperience">Доплащане за стаж в %: </label>
+                <input class = 'inputs' type="number" id = 'moneyForExeperience' min="0" >
+            </div>
+            <div>
+                <label for="moreIncome">Други допълнителни плащания: </label>
+                <input class = 'inputs' type="number" id = 'moreIncome' min="0"  >
+            </div>
+            <div>
+                <input type="submit" value="Изпращане" class="buttons">
+                <input type="reset" value="Изчисти" class="buttons">
+            </div>
+        </form>
+            <article>
+                <div>1. Основна заплата: <span id='salarySpan'></span></div>
+                <div>2. Минимален осигурителен доход: <span id='minSocialSecurityIncomeSpan'></span></div>
+                <div>3. Доплащане за стаж: <span id='moneyForExeperienceSpan'></span></div>
+                <div>4. Други плащания: <span id='moreIncomeSpan'></span></div>
+                <div>5. Брутна заплата: <span id='grossSalary'></span></div>
+                <div>6. Осигурителен доход: <span id='socialSecurityIncome'></span></div>
+                <div>7. Данък обществено осигуряване: <span id='socialSecurityTax'></span></div>
+                <div>8. Допълнително здравно осигуряване*: <span id='extraHealthInsuranceTax'></span></div>
+                <div>9. Здравно осигуряване: <span id='healthInsuranceTax'></span></div>
+                <div>10. Общо осигуровки: <span id='totalTax'></span></div>
+                <div>11. Данъчна основа: <span id='taxBase'></span></div>
+                <div>12. ДДФЛ: <span id='incomeTaxOfIndividuals'></span></div>
+                <div>13. Общо удръжки: <span id='totalDeductions'></span></div>
+                <div>14. Нетна заплата: <span id='netSalary'></span></div>
+            </article>
+        <div>'*' => Само за родените след 1960г.</div>
+        <div>ДДФЛ => Данък върху доходите на физически лица</div>
+    </main>
+    <footer>
+            <p>Повече информация:</p>
+            <p><img src="../../images/facebook.png" alt=""> <a href="https://www.facebook.com/deni.kolev.71" target="_blank">Deni Kolev</a></p>
+            <p><img src="../../images/download.png" alt=""> denislav_kolev00@abv.bg</p>
+            <p><img src="../../images/git.png" alt=""> <a href="https://github.com/DenislavKolev" target="_blank">https://github.com/DenislavKolev</a></p>
+    </footer>
+</body>
+</html>

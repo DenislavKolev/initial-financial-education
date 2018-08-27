@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Депозитен калкулатор</title>
+    <link rel="stylesheet" href="../../css/mainStyle.css">
+    <link rel="icon" href="../../images/logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../../js/depositCalculator.js"></script>
+    <script src="../../js/hours.js"></script>
+
+</head>
+<body>
+    <header>
+        <div>
+            <img src="../../images/logo.png" alt="">
+        </div>
+        <div>
+            <span class="hours"></span>
+            <a href="../../home.html">
+                <h1>Начално финансово образвание</h1>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../contracts.html">Договори</a></li>
+                <li><a href="../credits.html">Кредити</a></li>
+                <li><a href="../deposits.html">Депозити</a></li>
+                <li class="longer"><a href="../cards.html">Банкови карти</a></li>
+                <li><a href="../salary.html">Заплати</a></li>
+                <li><a href="../advices.html">Съвети</a></li>
+                <li><a href="../test.html">Тест</a></li>
+                <li class="longer"><a href="../about%20us.html">За проекта</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="headers">Калкулатор за изчисляване лихва по депозит</h1>
+        <p class="calculatorDescription">Този калкулатор служи за изчисляване на лихвата по вашия депозит, чрез въвеждането на съответните стойнoсти.</p>
+        <form class="calculatorForm" action="#">
+            <h2>Въведи:</h2>
+            <div>
+                <label for="deposit">Размер на депозита: </label>
+                <input type="text" id = 'deposit' >
+            </div>
+            <div>
+                <label for="duration">Срок да депозита*: </label>
+                <input type="text" id = 'duration'>
+            </div>
+            <div>
+                <label for="interesteRate">Годишен лихвен процент:</label>
+                <input type="text" id = "interesteRate">
+            </div>
+            <div>
+                <label for="accrualPeriod">Период на олихвяване*: </label>
+                <input type="text" id = 'accrualPeriod' min="1" >
+            </div>
+            <div>
+                <input type="submit" value="Изпращане" class="buttons">
+                <input type="reset" value="Изчисти" class="buttons">
+            </div>
+        </form>
+        <article >
+            <div>1. Натрупана лихва: <span id='accruedInterest'></span></div>
+            <div>2. Размер в края на депозита: <span id='total'></span></div>
+        </article>
+        <div>'*' => Въведете периода в месеци.</div>
+    </main>
+    <footer>
+            <p>Повече информация:</p>
+            <p><img src="../../images/facebook.png" alt=""> <a href="https://www.facebook.com/deni.kolev.71" target="_blank">Deni Kolev</a></p>
+            <p><img src="../../images/download.png" alt=""> denislav_kolev00@abv.bg</p>
+            <p><img src="../../images/git.png" alt=""> <a href="https://github.com/DenislavKolev" target="_blank">https://github.com/DenislavKolev</a></p>
+    </footer>
+</body>
+</html>
